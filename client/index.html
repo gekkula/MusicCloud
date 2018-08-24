@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music cloud</title>
+</head>
+<body ng-app="fileUpload">
+
+<style>
+    body {
+        margin:auto;
+        text-align: center;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    div {
+
+    }
+
+    .container {
+        text-align: left;
+        max-width: 600px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .title {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .subTitle {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .row {
+        padding: 5px;
+    }
+</style>
+<div class="container">
+    <div class="title">Add new song</div>
+    <form ng-controller="MyCtrl as up" name="up.upload_form">
+        <div class="row">
+            <label class="subTitle row" for="title">Title</label>
+            <input name="title"
+                    class="row" type="text" name="gender" id="title"><br>
+        </div>
+        <div class="row">
+            <label class="subTitle row" for="coverImage">Cover image</label>
+            <input class="row"
+
+
+
+                   ngf-select
+                   ng-model="up.file"
+                   name="coverImage"
+                   ngf-pattern="'image/*'"
+                   accept="image/*"
+                   ngf-max-size="20MB"
+
+                   id="coverImage" type="file"/>
+        </div>
+        <div class="row">
+            <label class="subTitle row" for="mp3">Mp3 music file </label>
+            <input
+
+                    type="file"
+                    ngf-select
+                    ng-model="up.file"
+                    name="mp3"
+                    ngf-pattern="'mp3/*'"
+                    accept="mp3/*"
+                    ngf-max-size="20MB"
+                    class="row" id="mp3" type="file"/>
+        </div>
+        <div class="row">
+            <i ng-show="up.upload_form.file.$error.required">*required</i><br>
+            <i ng-show="up.upload_form.file.$error.maxSize">File too large
+                {{up.file.size / 1000000|number:1}}MB: max 20M</i>
+            <button type="submit" ng-click="up.submit()">Upload</button>
+            <p>{{up.progress}}
+        </div>
+    </form>
+</div>
+<div class="container">
+    <div>Songs List</div>
+
+</div>
+</body>
+
+<script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="../node_modules/ng-file-upload/dist/ng-file-upload.min.js"></script>
+<script type="text/javascript" src="../node_modules/ng-file-upload/dist/ng-file-upload-shim.min.js"></script>
+
+<script type="text/javascript" src="main.js"></script>
+</html>

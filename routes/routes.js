@@ -8,7 +8,8 @@ var appRouter = function (app) {
 
 
     app.get("/", function (req, res) {
-        res.status(200).send({message: 'Welcome to our restful API'});
+        //res.sendfile('./client/index.html');
+        res.sendFile('index.html', { root: "./client/" });
     });
 
     app.post("/create", function (req, res) {
@@ -42,9 +43,9 @@ var appRouter = function (app) {
             res.status(400);
         }
     });
-    app.get("*", function (req, res) {
-        res.status(400).send({message: 'Unknown Request'});
-    });
+    // app.get("*", function (req, res) {
+    //     res.status(400).send({message: 'Unknown Request'});
+    // });
 }
 
 module.exports = appRouter;
