@@ -38,7 +38,7 @@ App.controller('MyCtrl', ['$scope', 'Upload', '$window', function ($scope, Uploa
     vm.uploadMp3 = function (file, dateTimeStamp, title) {
 
         Upload.upload({
-            url: 'http://musiccloud.herokuapp.com/create/' + dateTimeStamp + "/" + title,
+            url: 'https://musiccloud.herokuapp.com/create/' + dateTimeStamp + "/" + title,
             fields: {
                 name: "music",
                 fieldname: "music",
@@ -72,7 +72,7 @@ App.controller('MyCtrl', ['$scope', 'Upload', '$window', function ($scope, Uploa
     vm.uploadCoverImage = function (file, dateTimeStamp, title) {
 
         Upload.upload({
-            url: 'http://musiccloud.herokuapp.com/create/' + dateTimeStamp + "/" + title, //webAPI exposed to upload the file
+            url: 'https://musiccloud.herokuapp.com/create/' + dateTimeStamp + "/" + title, //webAPI exposed to upload the file
             fields: {
                 name: "coverImage",
                 fieldname: "coverImage",
