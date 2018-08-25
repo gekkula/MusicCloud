@@ -2,11 +2,81 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe85f12f-a9bc-4122-92e8-d630afa44ff7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535176553308-New Song.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535176647089-New Song.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535176735670-New Song.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535177144967-New Song.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535177216387-New Song 2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535177398835-New Song 3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535177469506-New Song 4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535180194674-New Song 5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535182432850-New Song 10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535182779938-New Song 11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535182892004-New Song 12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535183013666-New Song 13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535183089788-New Song 14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535183256818-New Song 15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535183332544-New Song 16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535184182364-New Song 17.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535184246423-New Song 18.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535184393866-New Song 19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535184456101-New Song 20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535184809203-New Song.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535184841879-New Song 22.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535184896879-New Song 24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535184962363-New Song 25.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535185098748-New Song 26.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535185286708-New Song 27.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535185752912-New Song 28.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535186359430-New Song 29.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535187885818-New Song 31.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535188043728-New Song 32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535188109523-New Song 33.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535188252968-New Song 34.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535188325640-New Song 35.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535188380650-New Song 36.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535188432886-New Song 37.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cover-image/1535188499719-New Song 38.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535176647089-New Song.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535176735670-New Song.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535177144967-New Song.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535177216387-New Song 2.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535177398835-New Song 3.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535177469506-New Song 4.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535180194674-New Song 5.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535182432850-New Song 10.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535182779938-New Song 11.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535182892004-New Song 12.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535183013666-New Song 13.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535183089788-New Song 14.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535183256818-New Song 15.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535183332544-New Song 16.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535184182364-New Song 17.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535184246423-New Song 18.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535184393866-New Song 19.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535184456101-New Song 20.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535184809203-New Song.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535184841879-New Song 22.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535184896879-New Song 24.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535184962363-New Song 25.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535185098748-New Song 26.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535185286708-New Song 27.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535185752912-New Song 28.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535186359430-New Song 29.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535187885818-New Song 31.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535188043728-New Song 32.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535188109523-New Song 33.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535188252968-New Song 34.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535188325640-New Song 35.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535188380650-New Song 36.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535188432886-New Song 37.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mp3/1535188499719-New Song 38.mp3" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/cover-image/1535121557365-Rang De.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/uploads/mp3/1535121557365-Rang De.mp3" afterPath="$PROJECT_DIR$/uploads/mp3/1535176553308-New Song.mp3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.js" afterPath="$PROJECT_DIR$/client/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/appController.js" afterPath="$PROJECT_DIR$/controllers/appController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/routes.js" afterPath="$PROJECT_DIR$/routes/routes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploads/title/titles.json" afterPath="$PROJECT_DIR$/uploads/title/titles.json" />
     </list>
@@ -40,7 +110,7 @@
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="e#0#49#0" expanded="false" />
               </folding>
@@ -51,8 +121,8 @@
       <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="7" selection-end-line="47" selection-end-column="10" />
+            <state relative-caret-position="182">
+              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
               <folding>
                 <element signature="e#0#49#0" expanded="false" />
               </folding>
@@ -60,11 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="appController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="appController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/appController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2550">
-              <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+            <state relative-caret-position="605">
+              <caret line="186" column="12" lean-forward="false" selection-start-line="186" selection-start-column="12" selection-end-line="186" selection-end-column="12" />
               <folding>
                 <element signature="e#0#49#0" expanded="false" />
               </folding>
@@ -72,12 +142,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="176">
+              <caret line="96" column="123" lean-forward="false" selection-start-line="96" selection-start-column="123" selection-end-line="96" selection-end-column="123" />
+              <folding>
+                <element signature="n#style#0;n#div#2;n#li#0;n#ul#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#2;n#li#0;n#ul#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,21 +158,11 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+            <state relative-caret-position="1220">
+              <caret line="147" column="33" lean-forward="false" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
               <folding>
                 <element signature="e#0#49#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/angularjs/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -108,7 +171,7 @@
         <entry file="file://$PROJECT_DIR$/uploads/title/titles.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="199" lean-forward="false" selection-start-line="0" selection-start-column="199" selection-end-line="0" selection-end-column="199" />
+              <caret line="0" column="59" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="5864" />
               <folding />
             </state>
           </provider>
@@ -141,6 +204,15 @@
       <find>1535109415940-Rang De</find>
       <find>Date</find>
       <find>app</find>
+      <find>result</find>
+      <find>ng-a</find>
+      <find>fileUpload</find>
+      <find>App</find>
+      <find>MyCtrl</find>
+      <find>console</find>
+      <find>refresh</find>
+      <find>controller</find>
+      <find>alert</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,15 +221,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/uploads/title/titles.json" />
-        <option value="$PROJECT_DIR$/controllers/appController.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/node_modules/angularjs/package.json" />
-        <option value="$PROJECT_DIR$/routes/routes.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/client/main.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/uploads/title/titles.json" />
         <option value="$PROJECT_DIR$/client/index.html" />
+        <option value="$PROJECT_DIR$/client/main.js" />
+        <option value="$PROJECT_DIR$/routes/routes.js" />
+        <option value="$PROJECT_DIR$/controllers/appController.js" />
       </list>
     </option>
   </component>
@@ -253,10 +325,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="uploads" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cover-image" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -385,16 +453,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535089042682</updated>
-      <workItem from="1535089043920" duration="26090000" />
+      <workItem from="1535089043920" duration="47579000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26090000" />
+    <option name="totallyTimeSpent" value="47579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1435" height="828" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947736" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -403,7 +471,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32806325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32806325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
@@ -427,14 +495,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/uploads/title/titles.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="199" lean-forward="false" selection-start-line="0" selection-start-column="199" selection-end-line="0" selection-end-column="199" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -459,20 +519,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="7" selection-end-line="47" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#49#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="e#0#49#0" expanded="false" />
           </folding>
@@ -484,35 +534,7 @@
         <state relative-caret-position="-3900">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/appController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#49#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/angularjs/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#49#0" expanded="false" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -528,11 +550,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/angularjs/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploads/cover-image/1535126140492-undefined.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploads/cover-image/1535134888523-undefined.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="176">
+          <caret line="96" column="123" lean-forward="false" selection-start-line="96" selection-start-column="123" selection-end-line="96" selection-end-column="123" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#li#0;n#ul#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#2;n#li#0;n#ul#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploads/title/titles.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="59" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="5864" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1220">
+          <caret line="147" column="33" lean-forward="false" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/appController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="186" column="12" lean-forward="false" selection-start-line="186" selection-start-column="12" selection-end-line="186" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

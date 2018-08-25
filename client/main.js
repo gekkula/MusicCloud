@@ -2,32 +2,156 @@
  * Created by kishoregekkula on 24/08/18.
  */
 
-angular.module('fileUpload', ['ngFileUpload'])
-    .controller('MyCtrl',['Upload','$window',function(Upload,$window){
-        var vm = this;
-        vm.submit = function(){
-            if (vm.upload_form.coverImage.$valid && vm.coverImage) {
-                vm.upload(vm.coverImage,vm.mp3,vm.title);
-            }
+var BroadCaster = function () {
+    var sender;
+    var listener;
+    this.registerSender = function (s) {
+        sender = s;
+    }
+    this.registerListener = function (l) {
+        listener = l;
+    }
+    this.on = function () {
+        listener.on();
+    }
+
+}
+var broadCaster = new BroadCaster();
+var App = angular.module('App', ['ngFileUpload']);
+App.controller('MyCtrl', ['$scope', 'Upload', '$window', function ($scope, Upload, $window, refresh) {
+    var vm = this;
+
+    broadCaster.registerSender($scope);
+    vm.submit = function () {
+        var dateTimeStamp = Date.now();
+        if (vm.upload_form.mp3.$valid && vm.mp3) {
+            vm.uploadMp3(vm.mp3, dateTimeStamp, vm.title);
+
         }
-        vm.upload = function (file1,file2,title) {
-            Upload.upload({
-                url: 'http://localhost:3030/create/', //webAPI exposed to upload the file
-                data:{coverImage:file1,mp3:file2,title:title} //pass file as data, should be user ng-model
-            }).then(function (resp) { //upload function returns a promise
-                if(resp.data.error_code === 0){ //validate success
-                    $window.alert('Success ' + resp.config.data.file1.name + 'uploaded. Response: ');
-                } else {
-                    $window.alert('an error occured');
+        if (vm.upload_form.coverImage.$valid && vm.coverImage) {
+            vm.uploadCoverImage(vm.coverImage, dateTimeStamp, vm.title);
+
+        }
+
+
+    }
+    vm.uploadMp3 = function (file, dateTimeStamp, title) {
+
+        Upload.upload({
+            url: 'http://localhost:3030/create/' + dateTimeStamp + "/" + title,
+            fields: {
+                name: "music",
+                fieldname: "music",
+                title: "title"
+            },
+            data: {music: file, 'title': "title"}
+        }).then(function (resp) {
+            if (resp.data.status ) { //validate success
+                $window.alert('Success ' + file.name + 'uploaded. Response: ');
+            } else {
+
+            }
+            console.log(resp.data);
+            vm.refresh()
+        }, function (resp) { //catch error
+
+            $window.alert('Error status: ' + resp);
+        }, function (evt) {
+
+            var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
+            vm.progress = 'progress: ' + progressPercentage + '% ';
+        });
+    };
+    vm.refresh = function () {
+        broadCaster.on();
+        vm.title=null;
+        vm.mp3=null;
+        vm.coverImage=null;
+        vm.progress = null;
+    }
+    vm.uploadCoverImage = function (file, dateTimeStamp, title) {
+
+        Upload.upload({
+            url: 'http://localhost:3030/create/' + dateTimeStamp + "/" + title, //webAPI exposed to upload the file
+            fields: {
+                name: "coverImage",
+                fieldname: "coverImage",
+                title: "title"
+            },
+            data: {coverImage: file, 'title': "title"} //pass file as data, should be user ng-model
+        }).then(function (resp) { //upload function returns a promise
+            if (resp.data.status) { //validate success
+                $window.alert('Success ' + file.name + 'uploaded. Response: ');
+                //  alert(resp);
+            } else {
+                // $window.alert('an error occured');
+            }
+            console.log(resp.data);;
+
+            vm.refresh()
+
+        }, function (resp) { //catch error
+
+            $window.alert('Error status: ' + resp);
+        }, function (evt) {
+
+            var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
+            vm.progress = 'progress: ' + progressPercentage + '% '; // capture upload progress
+        });
+    };
+
+}]);
+
+
+//var App = angular.module('App', []);
+
+App.controller('MyCtrl2', function ($scope, $http) {
+    $scope.records = {};
+    broadCaster.registerListener($scope)
+    $http.get('http://localhost:3030/readAll/')
+        .then(function (res) {
+            var arr = [];
+            var data = JSON.parse(res.data["data"]);
+
+            for (var i in data) {
+                arr.push(data[i]["title"]);
+
+            }
+            $scope.records = data;
+
+
+        });
+
+    $scope.on = function () {
+
+        $http.get('http://localhost:3030/readAll/')
+            .then(function (res) {
+                var arr = [];
+                var data = JSON.parse(res.data["data"]);
+
+                for (var i in data) {
+                    arr.push(data[i]["title"]);
+
                 }
-            }, function (resp) { //catch error
-                console.log('Error status: ' + resp.status);
-                $window.alert('Error status: ' + resp.status);
-            }, function (evt) {
-                console.log(evt);
-                var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
-                console.log('progress: ' + progressPercentage + '% ' + evt.config.data.file1.name);
-                vm.progress = 'progress: ' + progressPercentage + '% '; // capture upload progress
+                $scope.records = data;
+
+
             });
-        };
-    }]);
+    }
+
+    $scope.deleteRow= function (i) {
+
+        console.log($scope.records[i].id);
+
+        $http.get('http://localhost:3030/delete/'+$scope.records[i].id)
+            .then(function (res) {
+                console.log(res);
+                $scope.on();
+
+            });
+    };
+});
+
+
+
+

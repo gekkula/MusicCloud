@@ -3,11 +3,11 @@
 <head>
     <title>Music cloud</title>
 </head>
-<body ng-app="fileUpload">
+<body ng-app="App">
 
 <style>
     body {
-        margin:auto;
+        margin: auto;
         text-align: center;
     }
 
@@ -47,41 +47,40 @@
     <form ng-controller="MyCtrl as up" name="up.upload_form">
         <div class="row">
             <label class="subTitle row" for="title">Title</label>
-            <input name="title"
-                    class="row" type="text" name="gender" id="title"><br>
+            <input
+                    class="row" type="text" ng-model="up.title" name="title" id="title"><br>
         </div>
         <div class="row">
             <label class="subTitle row" for="coverImage">Cover image</label>
             <input class="row"
 
 
-
                    ngf-select
-                   ng-model="up.file"
+                   ng-model="up.coverImage"
                    name="coverImage"
                    ngf-pattern="'image/*'"
                    accept="image/*"
                    ngf-max-size="20MB"
-
                    id="coverImage" type="file"/>
         </div>
         <div class="row">
             <label class="subTitle row" for="mp3">Mp3 music file </label>
             <input
 
-                    type="file"
+
                     ngf-select
-                    ng-model="up.file"
+                    ng-model="up.mp3"
                     name="mp3"
-                    ngf-pattern="'mp3/*'"
-                    accept="mp3/*"
-                    ngf-max-size="20MB"
+                    ngf-pattern="'audio/*'"
+                    accept="audio/mpeg, audio/mp3"
+                    ngf-max-size="40MB"
+
                     class="row" id="mp3" type="file"/>
         </div>
         <div class="row">
-            <i ng-show="up.upload_form.file.$error.required">*required</i><br>
-            <i ng-show="up.upload_form.file.$error.maxSize">File too large
-                {{up.file.size / 1000000|number:1}}MB: max 20M</i>
+            <i ng-show="up.upload_form.coverImage.$error.required">*required</i><br>
+            <i ng-show="up.upload_form.coverImage.$error.maxSize">File too large
+                {{up.coverImage.size / 1000000|number:1}}MB: max 20M</i>
             <button type="submit" ng-click="up.submit()">Upload</button>
             <p>{{up.progress}}
         </div>
@@ -89,6 +88,18 @@
 </div>
 <div class="container">
     <div>Songs List</div>
+    <div ng-init="init()" ng-controller="MyCtrl2">
+        <ul>
+            <li ng-repeat="x in records track by $index">
+
+                <div class="row"> {{x.title}}</div>
+                <div class="row"> {{x.mp3Name}}</div>
+                <div class="row" style="text-align: right"> <button  style="text-align: center" ng-click="deleteRow($index)">Delete</button></div>
+
+            </li>
+        </ul>
+
+    </div>
 
 </div>
 </body>

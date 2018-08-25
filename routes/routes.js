@@ -12,12 +12,16 @@ var appRouter = function (app) {
         res.sendFile('index.html', { root: "./client/" });
     });
 
-    app.post("/create", function (req, res) {
+    app.post("/create/:token/:title", function (req, res) {
+
+        var id = req.params.token+"-"+req.params.title;
         var responseData = AppController.saveCoverImage(req, res);
+        var record = AppController.read(id);
         res.status(200).send(responseData);
     });
     app.get("/delete/:id", function (req, res) {
         var id = req.params.id;
+        console.log(req.params.id)
         var responseData = AppController.delete(id);
         res.status(200).send(responseData);
     });
