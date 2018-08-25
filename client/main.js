@@ -46,8 +46,8 @@ App.controller('MyCtrl', ['$scope', 'Upload', '$window', function ($scope, Uploa
             },
             data: {music: file, 'title': "title"}
         }).then(function (resp) {
-            if (resp.data.status ) { //validate success
-                $window.alert('Success ' + file.name + 'uploaded. Response: ');
+            if (resp.data.status) { //validate success
+                $window.alert('Success ' + file.name + 'uploaded. ');
             } else {
 
             }
@@ -64,9 +64,9 @@ App.controller('MyCtrl', ['$scope', 'Upload', '$window', function ($scope, Uploa
     };
     vm.refresh = function () {
         broadCaster.on();
-        vm.title=null;
-        vm.mp3=null;
-        vm.coverImage=null;
+        vm.title = null;
+        vm.mp3 = null;
+        vm.coverImage = null;
         vm.progress = null;
     }
     vm.uploadCoverImage = function (file, dateTimeStamp, title) {
@@ -81,12 +81,13 @@ App.controller('MyCtrl', ['$scope', 'Upload', '$window', function ($scope, Uploa
             data: {coverImage: file, 'title': "title"} //pass file as data, should be user ng-model
         }).then(function (resp) { //upload function returns a promise
             if (resp.data.status) { //validate success
-                $window.alert('Success ' + file.name + 'uploaded. Response: ');
+                $window.alert('Success ' + file.name + 'uploaded.  ');
                 //  alert(resp);
             } else {
                 // $window.alert('an error occured');
             }
-            console.log(resp.data);;
+            console.log(resp.data);
+            ;
 
             vm.refresh()
 
@@ -107,13 +108,15 @@ App.controller('MyCtrl', ['$scope', 'Upload', '$window', function ($scope, Uploa
 
 App.controller('MyCtrl2', function ($scope, $http) {
     $scope.records = {};
+    var audio = new Audio();
     broadCaster.registerListener($scope)
     $http.get('http://localhost:3030/readAll/')
         .then(function (res) {
             var data = JSON.parse(res.data["data"]);
 
             for (var i in data) {
-                data[i]["coverImage"] = "http://localhost:3030/images/"+data[i]["coverImage"]
+                data[i]["coverImage"] = "http://localhost:3030/images/" + data[i]["coverImage"]
+                data[i]["mp3"] = "http://localhost:3030/audio/" + data[i]["mp3"]
             }
             $scope.records = data;
 
@@ -127,7 +130,8 @@ App.controller('MyCtrl2', function ($scope, $http) {
                 var data = JSON.parse(res.data["data"]);
 
                 for (var i in data) {
-                    data[i]["coverImage"] = "http://localhost:3030/images/"+data[i]["coverImage"]
+                    data[i]["coverImage"] = "http://localhost:3030/images/" + data[i]["coverImage"]
+                    data[i]["mp3"] = "http://localhost:3030/audio/" + data[i]["mp3"]
                 }
                 $scope.records = data;
 
@@ -135,16 +139,39 @@ App.controller('MyCtrl2', function ($scope, $http) {
             });
     }
 
-    $scope.deleteRow= function (i) {
+    $scope.deleteRow = function (i) {
 
         console.log($scope.records[i].id);
-
-        $http.get('http://localhost:3030/delete/'+$scope.records[i].id)
+        $scope.stop(i);
+        $http.get('http://localhost:3030/delete/' + $scope.records[i].id)
             .then(function (res) {
                 console.log(res);
                 $scope.on();
 
             });
+    };
+    $scope.play = function (i) {
+
+        console.log($scope.records[i].id);
+
+        try {
+            audio.stop();
+        } catch (e) {
+
+        }
+        audio.src = $scope.records[i].mp3
+        audio.load();
+        audio.play();
+
+    };
+    $scope.stop = function (i) {
+        try {
+            audio.src = $scope.records[i].mp3
+            audio.stop();
+        } catch (e) {
+
+        }
+
     };
 });
 

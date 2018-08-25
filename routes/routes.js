@@ -36,7 +36,7 @@ var appRouter = function (app) {
     });
     app.get("/images/:id", function (req, res) {
         var id = req.params.id;
-        console.log(id);
+
         if(id==null){
             return ({status: false, message: "Image not found ! No image specified", data: JSON.stringify({id: id})});
         }
@@ -46,6 +46,21 @@ var appRouter = function (app) {
             res.end(img, 'binary');
         } catch (e) {
             console.log(e);
+            res.status(400);
+        }
+    });
+    app.get("/audio/:id", function (req, res) {
+        var id = req.params.id;
+
+        if(id==null){
+            return ({status: false, message: "Audio not found ! No file specified", data: JSON.stringify({id: id})});
+        }
+        try {
+            var img = fs.readFileSync("./uploads/mp3/" + id + "");
+            res.writeHead(200, {'Content-Type': 'audio/gif'});
+            res.end(img, 'binary');
+        } catch (e) {
+
             res.status(400);
         }
     });
