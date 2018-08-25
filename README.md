@@ -1,10 +1,24 @@
 
+
+
+
+#### API usage
 ###### Create
-```
-locahost:3030/create/
+@params:
+
+*token* a unique id for session
+
+*title* title of  music file
 
 ```
+locahost:3030/create/{token}/{title}
+
+```
+
 ###### Read single
+@params:
+
+*id* id of record
 ```
 locahost:3030/read/{id}
 
@@ -15,7 +29,11 @@ locahost:3030/readAll/
 
 ```
 
+
 ###### Delete single
+@params:
+
+*id* id of record
 ```
 locahost:3030/delete/{id}
 

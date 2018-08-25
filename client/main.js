@@ -110,12 +110,10 @@ App.controller('MyCtrl2', function ($scope, $http) {
     broadCaster.registerListener($scope)
     $http.get('http://localhost:3030/readAll/')
         .then(function (res) {
-            var arr = [];
             var data = JSON.parse(res.data["data"]);
 
             for (var i in data) {
-                arr.push(data[i]["title"]);
-
+                data[i]["coverImage"] = "http://localhost:3030/images/"+data[i]["coverImage"]
             }
             $scope.records = data;
 
@@ -126,12 +124,10 @@ App.controller('MyCtrl2', function ($scope, $http) {
 
         $http.get('http://localhost:3030/readAll/')
             .then(function (res) {
-                var arr = [];
                 var data = JSON.parse(res.data["data"]);
 
                 for (var i in data) {
-                    arr.push(data[i]["title"]);
-
+                    data[i]["coverImage"] = "http://localhost:3030/images/"+data[i]["coverImage"]
                 }
                 $scope.records = data;
 

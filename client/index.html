@@ -92,7 +92,7 @@
         <ul>
             <li ng-repeat="x in records track by $index">
 
-                <div class="row"> {{x.title}}</div>
+                <div class="row"><img width="40px;" height="40px" src="{{x.coverImage}}"> {{x.title}}</div>
                 <div class="row"> {{x.mp3Name}}</div>
                 <div class="row" style="text-align: right"> <button  style="text-align: center" ng-click="deleteRow($index)">Delete</button></div>
 
