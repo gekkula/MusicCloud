@@ -24,6 +24,6 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended: true, parameterLimit: 10
 
 routes(app);
 
-var server = app.listen(3030, function () {
+var server = app.listen(process.env.PORT || 3030, function () {
     console.log("app running on port.", server.address().port);
 });

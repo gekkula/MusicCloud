@@ -38,7 +38,7 @@ App.controller('MyCtrl', ['$scope', 'Upload', '$window', function ($scope, Uploa
     vm.uploadMp3 = function (file, dateTimeStamp, title) {
 
         Upload.upload({
-            url: 'http://localhost:3030/create/' + dateTimeStamp + "/" + title,
+            url: 'https://musiccloud.herokuapp.com/create/' + dateTimeStamp + "/" + title,
             fields: {
                 name: "music",
                 fieldname: "music",
@@ -72,7 +72,7 @@ App.controller('MyCtrl', ['$scope', 'Upload', '$window', function ($scope, Uploa
     vm.uploadCoverImage = function (file, dateTimeStamp, title) {
 
         Upload.upload({
-            url: 'http://localhost:3030/create/' + dateTimeStamp + "/" + title, //webAPI exposed to upload the file
+            url: 'https://musiccloud.herokuapp.com/create/' + dateTimeStamp + "/" + title, //webAPI exposed to upload the file
             fields: {
                 name: "coverImage",
                 fieldname: "coverImage",
@@ -110,13 +110,13 @@ App.controller('MyCtrl2', function ($scope, $http) {
     $scope.records = {};
     var audio = new Audio();
     broadCaster.registerListener($scope)
-    $http.get('http://localhost:3030/readAll/')
+    $http.get('https://musiccloud.herokuapp.com/readAll/')
         .then(function (res) {
             var data = JSON.parse(res.data["data"]);
 
             for (var i in data) {
-                data[i]["coverImage"] = "http://localhost:3030/images/" + data[i]["coverImage"]
-                data[i]["mp3"] = "http://localhost:3030/audio/" + data[i]["mp3"]
+                data[i]["coverImage"] = "https://musiccloud.herokuapp.com/images/" + data[i]["coverImage"]
+                data[i]["mp3"] = "https://musiccloud.herokuapp.com/audio/" + data[i]["mp3"]
             }
             $scope.records = data;
 
@@ -125,13 +125,13 @@ App.controller('MyCtrl2', function ($scope, $http) {
 
     $scope.on = function () {
 
-        $http.get('http://localhost:3030/readAll/')
+        $http.get('https://musiccloud.herokuapp.com/readAll/')
             .then(function (res) {
                 var data = JSON.parse(res.data["data"]);
 
                 for (var i in data) {
-                    data[i]["coverImage"] = "http://localhost:3030/images/" + data[i]["coverImage"]
-                    data[i]["mp3"] = "http://localhost:3030/audio/" + data[i]["mp3"]
+                    data[i]["coverImage"] = "https://musiccloud.herokuapp.com/images/" + data[i]["coverImage"]
+                    data[i]["mp3"] = "https://musiccloud.herokuapp.com/audio/" + data[i]["mp3"]
                 }
                 $scope.records = data;
 
@@ -143,7 +143,7 @@ App.controller('MyCtrl2', function ($scope, $http) {
 
         console.log($scope.records[i].id);
         $scope.stop(i);
-        $http.get('http://localhost:3030/delete/' + $scope.records[i].id)
+        $http.get('https://musiccloud.herokuapp.com/delete/' + $scope.records[i].id)
             .then(function (res) {
                 console.log(res);
                 $scope.on();
